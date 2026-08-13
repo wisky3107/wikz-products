@@ -9,10 +9,10 @@ Ship a minimal public gallery for the two verified products.
 - Package and TypeScript configuration
 - Required project and verification documentation
 - Responsive, semantic presentation with visible keyboard focus
-- Non-interactive Coming soon states while URLs remain unverified
+- Verified public launch links that open products in a new tab
 
 ## Out of scope
-Source-product edits, deploys, authentication, databases, search, filters, comments, ratings, analytics, external assets, and additional products.
+Source-product edits, authentication, databases, search, filters, comments, ratings, analytics, external assets, and additional products.
 
 ## Invariants
-Exactly two products appear in the approved order. Product facts remain local and typed. No launch URL or screenshot is invented.
+Exactly two products appear in the approved order. Product facts remain local and typed. Launch URLs are verified before publishing, and no screenshot is invented.

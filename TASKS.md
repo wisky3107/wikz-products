@@ -4,7 +4,7 @@
 - None.
 
 ## Next
-- Add verified public launch links and approved screenshots when supplied.
+- Add approved screenshots when supplied.
 
 ## Done
 - Defined gallery scope and verified product facts.
@@ -12,3 +12,4 @@
 - Implemented the responsive two-product gallery.
 - Installed dependencies and passed the production build.
 - Verified the gallery in the browser and recorded the E2E evidence.
+- Added and verified public launch links for both products.
