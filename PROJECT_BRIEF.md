@@ -1,27 +1,16 @@
-# PROJECT BRIEF — describe the web app in plain words
+# PROJECT BRIEF — Wikz Product Gallery
 
-> Fill this in everyday language. It's the compass the agent reads each session. Short is good.
+## What is this web app?
+A public single-page gallery that introduces Wikz's web products with concise, verified descriptions.
 
-## 1. What is this web app? (1–2 sentences)
-_Not yet defined — fill this in before the first feature is built._
+## Core experience
+Visitors scan a clear introduction, browse exactly two product cards in the approved order, understand each product's purpose and status, and see that launch links are pending.
 
-## 2. What does the user do? (interaction & goal)
-- Key actions:
-- Goal:
-- Success / completion when:
+## Desired feel
+Dark, polished, calm, editorial, responsive, and accessible.
 
-## 3. Core flow — the repeating sequence of actions
-_Not yet defined._
+## Target platform
+Current desktop and mobile browsers. Next.js App Router with strict TypeScript.
 
-## 4. Desired feel (UX feel)
-_Not yet defined._
-
-## 5. Visual / brand style (if any)
-_Not yet defined._
-
-## 6. Target platform & browser
-Web app built with Next.js (App Router), responsive, desktop-first with mobile support.
-Deployed to Vercel. (Locked in `docs/adr/0001-tech-stack.md`.)
-
-## 7. NOT in this version (to avoid bloat)
-_Not yet defined._
+## Not in this version
+Authentication, admin tools, databases, search, filters, comments, ratings, analytics, external assets, and invented links or screenshots.

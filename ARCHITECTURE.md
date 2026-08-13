@@ -1,41 +1,16 @@
-# ARCHITECTURE — project module map
-
-> Keep this short and current. The agent reads it to respect module boundaries and dependency direction.
-> Update it whenever a module or a cross-module dependency is added.
-
-## Layers (dependencies point downward only)
-
-```
-pages        → features, services, shared
-features     → services, shared
-services     → shared
-shared       → (nothing)
-```
+# ARCHITECTURE — Product gallery
 
 ## Modules
-
-| Module | Layer | Responsibility | Public API (methods/exports) | May depend on |
-|--------|-------|----------------|------------------------------|---------------|
-| _(none yet — no code scaffolded)_ | | | | |
-
-## Cross-module communication
-- Context providers: `src/providers/` for app-wide state (auth, theme).
-- Feature hooks for feature-specific state.
-- Props for parent→child data flow; callbacks for child→parent events.
+| Module | Responsibility |
+|---|---|
+| `app/layout.tsx` | Root document metadata and global styles |
+| `app/page.tsx` | Semantic, server-rendered gallery presentation |
+| `data/products.ts` | Typed, verified product facts and display order |
+| `app/globals.css` | Design tokens, responsive layout, focus and reduced-motion styling |
 
 ## Route registry
+| Route | Component | Authentication |
+|---|---|---|
+| `/` | `Home` | None |
 
-| Route | Page component | Auth required? | Layout group |
-|-------|---------------|----------------|--------------|
-| _(none yet)_ | | | |
-
-## State ownership (single source of truth)
-
-| State | Owned by | Others access via |
-|-------|----------|-------------------|
-| _(none yet)_ | | |
-
-## Rules of this project
-- No upward dependencies (lower layer never imports a higher one).
-- No dependency cycles. If two modules need each other, extract shared logic to `shared`.
-- Cross-module calls use public API or context/callbacks only — never another module's internals.
+Data flows one way from the local product module into the page. There is no runtime state, remote fetch, or client-side data requirement.
